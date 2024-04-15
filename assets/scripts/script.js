@@ -1,23 +1,17 @@
 const formSubmit = $('#search');
 const input = $('#search-input')
-const recipeContainer = $('.recipe-card')
+const right = $('#right')
 
 
 
 function apiCall(event) {
 	event.preventDefault();
-	;
+	
 	console.log("Inside API Call");
-	const url = `https://yummly2.p.rapidapi.com/feeds/search?start=0&maxResult=8&q=${input.val()}`;
-	const options = {
-		method: 'GET',
-		headers: {
-			'X-RapidAPI-Key': '7d8c042289mshc514aced7d88fe4p1a19f8jsn3772f5b49341',
-			'X-RapidAPI-Host': 'yummly2.p.rapidapi.com'
-		}
-	};
+	const url = `https://api.openweathermap.org/data/3.0/onecall?lat=33.44&lon=-94.04&appid=216b199ad40ea7f7a10905ebc665b34c`;
+	
 
-	fetch(url, options)
+	fetch(url)
 		.then(function (response) {
 			return response.json();
 		})
