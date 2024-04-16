@@ -29,7 +29,7 @@ let inputValue = input.val();
 
 //making first API call to receive geocode values
 
-	const cityUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${inputValue}&limit=1&appid=216b199ad40ea7f7a10905ebc665b34c`
+	const cityUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${inputValue}&limit=1&appid=216b199ad40ea7f7a10905ebc665b34c`
 
 	fetch(cityUrl)
 	.then(function (response) {
