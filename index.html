@@ -21,8 +21,11 @@
                 <form id="search">
                     <div class="input-group input-group-lg">
                         <div>
-                            <label for="search-input"><h2>Search for a City:</h2></label>
-                            <input type="text" id="search-input" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" placeholder="Type a city">
+                            <label for="search-input">
+                                <h2>Search for a City:</h2>
+                            </label>
+                            <input type="text" id="search-input" class="form-control" aria-label="Large"
+                                aria-describedby="inputGroup-sizing-sm" placeholder="Type a city">
                             <button type="submit" class="btn btn-secondary btn-lg btn-block">Search Weather</button>
                         </div>
                     </div>
@@ -30,19 +33,70 @@
                 <div id='past-search-container' class="container">
                     <div class="card" style="width: 18rem;">
                         <ul class="list-group list-group-flush">
-                          <li class="list-group-item">Atlanta</li>
-                          <li class="list-group-item">Charlotte</li>
-                          <li class="list-group-item">Los Angeles</li>
+                            <li class="list-group-item">Atlanta</li>
+                            <li class="list-group-item">Charlotte</li>
+                            <li class="list-group-item">Los Angeles</li>
                         </ul>
-                      </div>
+                    </div>
                 </div>
             </div>
 
-            <div id="right" class="col-7">
-                <div class="">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam distinctio quis hic nostrum! Eius
-                        assumenda quas dolores modi excepturi at quae, ratione molestias. Quod fugiat non iste, natus
-                        voluptas neque.</p>
+            <div id="right" class="col-8 align">
+                <div id="city-info" class="card">
+                    <div class="card-header">
+                        City Weather
+                    </div>
+                    <div class="card-body">
+                        <h5 id="city-name-result" class="card-title">City Name Here</h5>
+                        <p id="city-temp-result" class="card-text">Temperature: </p>
+                        <p id="city-wind-result" class="card-text">Wind: </p>
+                        <p id="city-humid-result" class="card-text">Humidity: </p>
+                    </div>
+                </div>
+                <div id="forecast-card-container" class="row d-flex justify-content-between">
+                    <div class="card col">
+                        <div class="card-body">
+                            <h5 class="card-title">DATE</h5>
+                            <p class="card-text">Temp: 76</p>
+                            <p class="card-text">Wind: 76</p>
+                            <p class="card-text">Humid: 76</p>
+                        </div>
+                    </div>
+                    <div class="card col">
+                        <div class="card-body">
+                            <h5 class="card-title">DATE</h5>
+                            <p class="card-text">Temp: 76</p>
+                            <p class="card-text">Wind: 76</p>
+                            <p class="card-text">Humid: 76</p>
+                        </div>
+                    </div>
+                    <div class="card col">
+                        <div class="card-body">
+                            <h5 class="card-title">DATE</h5>
+                            <p class="card-text">Temp: 76</p>
+                            <p class="card-text">Wind: 76</p>
+                            <p class="card-text">Humid: 76</p>
+                        </div>
+                    </div>
+                    <div class="card col">
+                        <div class="card-body">
+                            <h5 class="card-title">DATE</h5>
+                            <p class="card-text">Temp: 76</p>
+                            <p class="card-text">Wind: 76</p>
+                            <p class="card-text">Humid: 76</p>
+                        </div>
+                    </div>
+                    <div class="card col">
+                        <div class="card-body">
+                            <h5 class="card-title">DATE</h5>
+                            <p class="card-text">Temp: 76</p>
+                            <p class="card-text">Wind: 76</p>
+                            <p class="card-text">Humid: 76</p>
+                        </div>
+                    </div>
+                    
+                        
+                    </div>
                 </div>
             </div>
         </div>
